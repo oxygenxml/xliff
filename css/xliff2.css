@@ -129,7 +129,7 @@ skeleton {
   padding: 0.2em;
   margin: 0.2em;
   -oxy-foldable: true;
-  white-space: -oxy-trim-when-ws-only;
+  white-space: trim-when-ws-only;
   -oxy-folded: true;
 }
 oxy|comment {
@@ -279,4 +279,21 @@ definition:before {
 }
 glossary > * {
   padding-left: 1em;
+}
+segment ph {
+  -oxy-display-tags: none;
+  border: 1px solid gray;
+}
+segment ph:before {
+  content: " [" "ph: " attr(id) "] ";
+}
+segment pc,
+segment ph,
+segment cp,
+segment sc,
+segment ec,
+segment mrk,
+segment sm,
+segment em {
+  display: inline;
 }

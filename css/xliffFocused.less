@@ -68,4 +68,15 @@ source, note{
     -oxy-editable:false;
 }
 
+segment ph {
+    -oxy-display-tags:none;
+    border:1px solid gray;
+}
+segment ph:before {
+    content: " [" "ph: " attr(id) "] ";
+}
 
+segment {
+pc, ph, cp, sc, ec, mrk, sm, em {
+    display:inline;
+}}

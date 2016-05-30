@@ -55,3 +55,20 @@ source,
 note {
   -oxy-editable: false;
 }
+segment ph {
+  -oxy-display-tags: none;
+  border: 1px solid gray;
+}
+segment ph:before {
+  content: " [" "ph: " attr(id) "] ";
+}
+segment pc,
+segment ph,
+segment cp,
+segment sc,
+segment ec,
+segment mrk,
+segment sm,
+segment em {
+  display: inline;
+}
