@@ -224,11 +224,11 @@ trans-unit {
 }
 trans-unit:before{
     content:"Translation Unit, Approved: "
-    oxy_editor(
-        type, combo,
-        edit, "@approved",
-        values, "yes, no",
-        editable, true
+    oxy_checkbox(
+        edit, '@approved',
+        values, 'yes',
+        uncheckedValues, 'no',
+        labels, 'Approved'
     );
     color:gray;
 }
