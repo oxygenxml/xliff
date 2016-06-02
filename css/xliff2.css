@@ -222,9 +222,15 @@ tool:before {
 trans-unit {
   margin: 2px;
 }
-trans-unit:before {
-  content: "Translation Unit";
-  color: gray;
+trans-unit:before{
+    content:"Translation Unit, Approved: "
+    oxy_editor(
+        type, combo,
+        edit, "@approved",
+        values, "yes, no",
+        editable, true
+    );
+    color:gray;
 }
 trans-unit > * {
   padding-left: 1em;

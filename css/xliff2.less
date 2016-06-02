@@ -314,7 +314,13 @@ trans-unit{
 }
 
 trans-unit:before{
-    content:"Translation Unit";
+    content:"Translation Unit, Approved: "
+    oxy_editor(
+        type, combo,
+        edit, "@approved",
+        values, "yes, no",
+        editable, true
+    );
     color:gray;
 }
 
