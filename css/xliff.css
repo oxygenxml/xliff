@@ -145,14 +145,6 @@ trans-unit:before{
     color:gray;
 }
 
-trans-unit[approved="yes"] > * {
-    -oxy-editable: false;
-    background-color: #c8ffd2;
-    border: 1pt solid #82c896;
-    /* Add transparency */
-    color:rgba(50, 50, 50, 0.7);
-}
-
 trans-unit > *{
     padding-left:1em;
 }
