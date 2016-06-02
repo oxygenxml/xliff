@@ -222,9 +222,15 @@ tool:before {
 trans-unit {
   margin: 2px;
 }
-trans-unit:before {
-  content: "Translation Unit";
-  color: gray;
+trans-unit:before{
+    content:"Translation Unit, Approved: "
+    oxy_checkbox(
+        edit, '@approved',
+        values, 'yes',
+        uncheckedValues, 'no',
+        labels, 'Approved'
+    );
+    color:gray;
 }
 trans-unit[approved="yes"] > * {
     -oxy-editable: false;

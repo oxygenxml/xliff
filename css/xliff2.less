@@ -314,7 +314,13 @@ trans-unit{
 }
 
 trans-unit:before{
-    content:"Translation Unit";
+    content:"Translation Unit, Approved: "
+    oxy_checkbox(
+        edit, '@approved',
+        values, 'yes',
+        uncheckedValues, 'no',
+        labels, 'Approved'
+    );
     color:gray;
 }
 
