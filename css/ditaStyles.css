@@ -10,3 +10,6 @@ segment pc[id^='ul-'] {
 segment pc[id^='li-'] {
   display: list-item;
 }
+segment pc[id^='i-'] {
+  font-style: italic;
+}
