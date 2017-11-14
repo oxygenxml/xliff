@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:import schemaLocation="xliff_core_2.0.xsd" namespace="urn:oasis:names:tc:xliff:document:2.0"/>
+    <!-- CTR does not have module status in XLIFF 2.1 -->
+    <xs:import schemaLocation="informativeCopiesOf3rdPartySchemas/extensions/change_tracking.xsd" namespace="urn:oasis:names:tc:xliff:changetracking:2.0"/>
+    <xs:import schemaLocation="fs.xsd" namespace="urn:oasis:names:tc:xliff:fs:2.0"/>
+    <xs:import schemaLocation="glossary.xsd" namespace="urn:oasis:names:tc:xliff:glossary:2.0"/>
+    <xs:import schemaLocation="matches.xsd" namespace="urn:oasis:names:tc:xliff:matches:2.0"/>
+    <xs:import schemaLocation="metadata.xsd" namespace="urn:oasis:names:tc:xliff:metadata:2.0"/>
+    <xs:import schemaLocation="resource_data.xsd" namespace="urn:oasis:names:tc:xliff:resourcedata:2.0"/>
+    <xs:import schemaLocation="size_restriction.xsd" namespace="urn:oasis:names:tc:xliff:sizerestriction:2.0"/>
+    <xs:import schemaLocation="itsm.xsd" namespace="urn:oasis:names:tc:xliff:itsm:2.1"/>
+    <xs:import schemaLocation="its.xsd" namespace="http://www.w3.org/2005/11/its"/>
+</xs:schema>
