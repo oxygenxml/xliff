@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<serialized version="18.1" xml:space="preserve">
+<serialized version="21.0" xml:space="preserve">
 	<serializableOrderedMap>
 		<entry>
 			<String>document.types</String>
@@ -17,7 +17,7 @@
 								<Integer>2</Integer>
 							</field>
 							<field name="uri">
-								<String>${framework}/xsd/2.0/xliff_all.xsd</String>
+								<String>${framework}/schemas/2.0/xliff_all.xsd</String>
 							</field>
 						</docTypeSchema>
 					</field>
@@ -192,7 +192,7 @@
 					</field>
 					<field name="xmlCatalogs">
 						<String-array>
-							<String>${framework}/xsd/2.0/catalog.xml</String>
+							<String>${framework}/schemas/2.0/catalog.xml</String>
 						</String-array>
 					</field>
 					<field name="description">
@@ -223,7 +223,7 @@
 									<String>*</String>
 								</field>
 								<field name="attributeValue">
-									<String>2*</String>
+									<String>2.0</String>
 								</field>
 							</documentTypeRule>
 						</documentTypeRule-array>
@@ -280,6 +280,9 @@
 						<null/>
 					</field>
 					<field name="customAttributeValueEditor">
+						<null/>
+					</field>
+					<field name="textModeExternalObjectInsertionHandler">
 						<null/>
 					</field>
 				</documentTypeDescriptor>

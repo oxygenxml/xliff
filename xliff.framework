@@ -17,7 +17,7 @@
 								<Integer>2</Integer>
 							</field>
 							<field name="uri">
-								<String>${framework}/xsd/1.2/xliff-core-1.2-transitional.xsd</String>
+								<String>${framework}/schemas/1.2/xliff-core-1.2-transitional.xsd</String>
 							</field>
 						</docTypeSchema>
 					</field>
@@ -141,7 +141,7 @@
 					</field>
 					<field name="xmlCatalogs">
 						<String-array>
-							<String>${framework}/xsd/1.2/catalog.xml</String>
+							<String>${framework}/schemas/1.2/catalog.xml</String>
 						</String-array>
 					</field>
 					<field name="description">
