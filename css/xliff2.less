@@ -67,15 +67,9 @@ glossary, glossentry, term, translation, definition{
     }
 }
 
-
-
-x12|xliff:before(10) {
+xliff:before(10) {
     .title();
-    content: "XLIFF 1.2";
-}
-x20|xliff:before(10) {
-    .title();
-    content: "XLIFF 2.0";
+    content: "XLIFF " attr(version);
 }
 
 *|xliff[srcLang][trgLang]:before(8) {
@@ -165,17 +159,15 @@ x20|file:-oxy-edit:before(11){
 x12|file:before,
 x20|file:before{
     content:
-        oxy_checkbox(
-            edit, '@translate',
-            labels, ''
-        )
         oxy_label(text, "Translate")
-        "        "
-        oxy_checkbox(
-            edit, '@canResegment',
-            labels, ''
+        oxy_combobox(
+            edit, '@translate'
         )
+        "        "
         oxy_label(text, "Can resegment ")
+        oxy_combobox(
+            edit, '@canResegment'
+        )
 }
 
 x12|file > *,

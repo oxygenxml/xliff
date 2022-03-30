@@ -19,23 +19,14 @@ translation,
 definition {
   display: block;
 }
-x12|xliff:before(10) {
+xliff:before(10) {
   margin-top: 1em;
   margin-bottom: 1em;
   display: block;
   font-size: 1.5em;
   text-align: center;
   font-family: arial, helvetica, sans-serif;
-  content: "XLIFF 1.2";
-}
-x20|xliff:before(10) {
-  margin-top: 1em;
-  margin-bottom: 1em;
-  display: block;
-  font-size: 1.5em;
-  text-align: center;
-  font-family: arial, helvetica, sans-serif;
-  content: "XLIFF 2.0";
+  content: "XLIFF " attr(version);
 }
 *|xliff[srcLang][trgLang]:before(8) {
   display: block;
@@ -114,7 +105,7 @@ x20|file:-oxy-edit:before(11) {
 }
 x12|file:before,
 x20|file:before {
-  content: oxy_checkbox(edit, '@translate', labels, '') oxy_label(text, "Translate") "        " oxy_checkbox(edit, '@canResegment', labels, '') oxy_label(text, "Can resegment ");
+  content: oxy_label(text, "Translate") oxy_combobox(edit, '@translate') "        " oxy_label(text, "Can resegment ") oxy_combobox(edit, '@canResegment');
 }
 x12|file > *,
 x20|file > * {
@@ -222,22 +213,16 @@ tool:before {
 trans-unit {
   margin: 2px;
 }
-trans-unit:before{
-    content:"Translation Unit, Approved: "
-    oxy_checkbox(
-        edit, '@approved',
-        values, 'yes',
-        uncheckedValues, 'no',
-        labels, 'Approved'
-    );
-    color:gray;
+trans-unit:before {
+  content: "Translation Unit, Approved: " oxy_checkbox(edit, '@approved', values, 'yes', uncheckedValues, 'no', labels, 'Approved');
+  color: gray;
 }
 trans-unit[approved="yes"] > * {
-    -oxy-editable: false;
-    background-color: #c8ffd2;
-    border: 1pt solid #82c896;
-    /* Add transparency */
-    color:rgba(50, 50, 50, 0.7);
+  -oxy-editable: false;
+  background-color: #c8ffd2;
+  border: 1pt solid #82c896;
+  /* Add transparency */
+  color: rgba(50, 50, 50, 0.7);
 }
 trans-unit > * {
   padding-left: 1em;
